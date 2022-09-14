@@ -31,9 +31,10 @@
     &__tech-perc {
         margin-top: 120px;
         display: grid;
-        grid-template-columns: repeat(3, 350px);
+        grid-template-columns: repeat(3, 337px);
         grid-template-rows: repeat(2, 70px);
         gap: 30px 45px;
+        justify-content: center;
         &-item {
             &-top {
                 display: flex;
