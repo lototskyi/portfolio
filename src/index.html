@@ -452,19 +452,23 @@
                     <div class="title title_fz14 contacts__text">Or leave me your contacts</div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input id="name" type="text" name="name">
+                            <input required id="name" type="text" name="name">
                             <label for="name">Your name</label>
                         </div>
                         <div class="contacts__input">
-                            <input id="email" type="email" name="email">
+                            <input required id="email" type="email" name="email">
                             <label for="email">Your email</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Your message</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn">Send message</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>I agree with <a href="/policy.html">privacy policy</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
