@@ -22,17 +22,6 @@
     margin: 25px auto 0 auto;
 }
 
-.title-circle-center {
-    position: relative;
-    text-align: center;
-    @include before_circle;
-    &:before {
-        top: -6px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/button';
@@ -41,3 +30,4 @@
 @import 'blocks/about';
 @import 'blocks/resume';
 @import 'blocks/skills';
+@import 'blocks/portfolio';

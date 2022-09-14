@@ -17,7 +17,7 @@ const percents = document.querySelectorAll('.skills__tech-perc-item-perc'),
 percents.forEach((item, i) => {
     const regex = /-?\d+/;
     const perc = +item.innerHTML.match(regex);
-    console.log(perc);
+
     if (0 <= perc && perc <= 100) {
         lines[i].style.width = `${perc}%`;
     } else if(perc > 100) {
