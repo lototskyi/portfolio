@@ -31,6 +31,24 @@
             column-gap: 100px;
         }
     }
+    .skills {
+        &__tech {
+            grid-template-columns: repeat(3, 270px);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        &__tech-perc {
+            margin: 120px auto 0 auto;
+            width: 870px;
+            grid-template-columns: repeat(2, 337px);
+            column-gap: 170px;
+            justify-content: center;
+            &-item {
+                transform: translateX(6px);
+            }
+        }
+        
+    }
 }
 @media (max-width: 992px) {
     .container {
@@ -59,6 +77,17 @@
             padding: 30px 20px 0 20px;
             grid-template-columns: repeat(2, 305px);
             column-gap: 70px;
+        }
+    }
+    .skills {
+        &__tech {
+            grid-template-columns: repeat(2, 270px);
+            gap: 30px;
+        }
+        &__tech-perc {
+            margin-top: 40px;
+            width: 570px;
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
@@ -118,6 +147,19 @@
             &-body {
                 padding-left: 20px;
             }
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        &__tech {
+            grid-template-columns: repeat(2, 260px);
+            grid-template-rows: repeat(2, 260px);
+            grid-auto-rows: 260px;
+            gap: 20px;
+        }
+        &__tech-perc {
+            width: 540px;
+            row-gap: 48px;
         }
     }
 }
@@ -204,6 +246,18 @@
             &-body {
                 padding-left: 45px;
             }
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        &__tech {
+            grid-template-columns: repeat(1, 270px);
+            grid-template-rows: repeat(2, 270px);
+            grid-auto-rows: 270px;
+            gap: 20px;
+        }
+        &__tech-perc {
+            width: 260px;
         }
     }
 }
