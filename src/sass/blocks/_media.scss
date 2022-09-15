@@ -24,6 +24,13 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            padding: 40px 40px 0 40px;
+            grid-template-columns: repeat(2, 390px);
+            column-gap: 100px;
+        }
+    }
 }
 @media (max-width: 992px) {
     .container {
@@ -45,6 +52,13 @@
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 30px 20px 0 20px;
+            grid-template-columns: repeat(2, 305px);
+            column-gap: 70px;
         }
     }
 }
@@ -79,6 +93,33 @@
             }
         }
     }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            padding: 30px 10px 0 10px;
+            grid-template-columns: repeat(2, 245px);
+            column-gap: 30px;
+        }
+        &__item {
+            &:before {
+                width: 10px;
+            }
+            &-head {
+                padding-left: 60px;
+            }
+            &-icon {
+                &:before {
+                    left: -35px;
+                }
+                img {
+                    left: -18px;
+                }
+            }
+            &-body {
+                padding-left: 20px;
+            }
+        }
+    }
 }
 @media (max-width: 576px) {
     .container {
@@ -92,6 +133,9 @@
         &_fz36 {
             font-size: 24px;
         }
+    }
+    .divider {
+        margin-top: 0;
     }
     .hamburger {
         right: 20px;
@@ -114,6 +158,52 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: auto / 1fr;
+            row-gap: 40px;
+        }
+        li:first-child &__item {
+            &-head {
+                padding-top: 45px;
+            }
+            
+        }
+        li:not(:first-child) &__item {
+            &:before {
+                top: 33px;
+            }
+            &-icon {
+                &:before {
+                    top: -35px;
+                }
+                img {
+                    top: -19px;
+                }
+            }
+        }
+        &__item {
+            &:before {
+                width: 45px;
+            }
+            &-head {
+                padding-top: 10px;
+                padding-left: 100px;
+            }
+            &-icon {
+                &:before {
+                    left: 0;
+                }
+                img {
+                    left: 17px;
+                }
+            }
+            &-body {
+                padding-left: 45px;
+            }
         }
     }
 }
