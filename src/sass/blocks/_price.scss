@@ -11,7 +11,7 @@
     }
     &__item {
         display: grid;
-        grid-template: 21px 18px / 2fr 1fr;
+        grid-template: minmax(21px, auto) minmax(18px, auto) / 2fr 1fr;
         justify-content: space-around;
         padding-left: 25px;
         position: relative;

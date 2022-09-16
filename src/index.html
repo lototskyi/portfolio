@@ -123,7 +123,18 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <!-- <img srcset="img/main_photo-min.jpg 300w, img/main_photo.jpg 400w"
+                        sizes="(max-width: 576px) 280px, (min-width: 577px) 400px"
+                        src="img/main_photo.jpg" alt="photo"> -->
+                    <!-- <picture>
+                        <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture> -->
+                    <picture>
+                        <source type="image/webp" srcset="img/main_photo.webp">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title">About me</h2>
@@ -389,7 +400,7 @@
             </div>
         </div>
     </section>
-    <section class="price">
+    <!-- <section class="price">
         <div class="container">
             <h2 class="title title_fz16 title-circle-center">Price list</h2>
             <div class="divider"></div>
@@ -426,7 +437,7 @@
                 </li>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
@@ -449,28 +460,6 @@
                             <img src="icons/social/instagram.svg" alt="">
                         </a>
                     </div>
-                    <div class="title title_fz14 contacts__text">Or leave me your contacts</div>
-                    <form action="#" class="contacts__form">
-                        <div class="contacts__input">
-                            <input required id="name" type="text" name="name">
-                            <label for="name">Your name</label>
-                        </div>
-                        <div class="contacts__input">
-                            <input required id="email" type="email" name="email">
-                            <label for="email">Your email</label>
-                        </div>
-                        <div class="contacts__textarea">
-                            <textarea name="text" id="text"></textarea>
-                            <label for="text">Your message</label>
-                        </div>
-                        <div class="contacts__triggers">
-                            <button class="contacts__btn btn">Send message</button>
-                            <div class="contacts__policy">
-                                <input required type="checkbox">
-                                <span>I agree with <a href="/policy.html">privacy policy</a></span>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
